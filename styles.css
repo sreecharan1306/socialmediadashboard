@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    
+
+    --up:#1eb589;
+    --down:#dc414c;
+    --grey:grey;
+    --fac:hsl(208,92%,53%);
+    --twitter:hsl(203,89%,53%);
+    --insta:linear-gradient(hsl(37,97%,70%),hsl(329,70%,58%));
+    --yt:hsl(348,97%,39%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg);
+}
+main {
+    
+    height: 100%;
+    width: 76vw;
+    border: none;
+    margin: 5vw 12vw;
+}
+
+.font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+#dashboard {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#d1 h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--tc);
+}
+
+#d1 p {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--grey);
+
+}
+
+#d2 {
+    padding-top: 5px;
+
+}
+#d2 span{
+    color: var(--tc);
+}
+
+.followers {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.mbox{
+    margin-top:8px ;
+    margin-top: 2px;
+    height: 35vh;
+    width: 17vw;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--box);
+}
+.mbox .con{
+    margin-top: 2px;
+    height: 35vh;
+    width: 17vw;
+    background-color: var(--box);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 13px 0;
+}
+
+.mbox .con:hover {
+    background-color: var(--hoverl);
+    cursor: pointer;
+}
+
+.mbox span {
+    display: inline-flex;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--ctext);
+    text-align: center;
+    justify-content: center;
+}
+
+.num {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.num h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--ctext);
+}
+
+.follow {
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: var(--ctext);
+}
+
+.mbox span {
+    gap: 8px;
+}
+
+.mbox .spu,
+.mbox .spd {
+    letter-spacing: 1px;
+    font-weight: 700;
+    display: inline-flex;
+    font-size: 0.7rem;
+    gap: 6px;
+    align-items: center;
+}
+
+.mbox .spu img,
+.mbox .spd img{
+    align-items: center;
+    height: 0.5rem;
+    width: 8px;
+}
+
+.mbox .spu {
+    color: var(--up);
+}
+
+.mbox .spd {
+    color: var(--down);
+}
+
+.des,
+.des-fac,
+.des-t,
+.des-i,
+.des-y {
+    height: 5px;
+    width: inherit;
+}
+
+.des-fac {
+    background: var(--fac);
+}
+
+.des-t {
+    background: var(--twitter);
+}
+
+.des-i {
+    background: var(--insta);
+}
+
+.des-y {
+    background: var(--yt);
+}
+
+
+.overview {
+    letter-spacing: 1px;
+    color: var(--grey);
+    font-weight: 700;
+    margin: 15px 0 25px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cbox {
+    height: 20vh;
+    width: 17vw;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--box);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 13px 0;
+    margin-bottom: 5px;
+}
+
+.cbox:hover {
+    background-color: var(--hoverl);
+    cursor: pointer;
+}
+
+.c1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 15px;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--grey);
+}
+
+.c1 img {
+    border-radius: 5px;
+}
+
+.c2 {
+    display: flex;
+    justify-content: space-between;
+    color:var(--ctext);
+    margin: 10px 12px;
+    align-items: end;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+}
+
+.c2 h1 {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.c2 img {
+    height: 10px;
+    width: 10px;
+}
+
+.c2 span {
+    padding-bottom: 4px;
+}
+
+.c2 .su,
+.c2 .sd {
+    display: inline-flex;
+    text-align: end;
+    gap: 4px;
+    font-weight: 700;
+    display: flex;
+    font-size: 10px;
+}
+
+.c2 .su {
+    color: var(--up);
+}
+
+.c2 .sd {
+    color: var(--down);
+}
+
+/* 
+.c2{
+    display: flex;
+    justify-content:space-between;
+    color: #1f2029;
+    margin: 10px 12px;
+    align-items: end;
+    margin-bottom: 2px;
+    
+}
+.c2 h1{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.c2 img{
+    height: 10px;
+    width: 10px; 
+}
+.c2 span{
+    padding-bottom: 4px;
+}
+.c2 .su{
+    display: inline-flex;
+    text-align: end;
+    gap:4px;
+    color: #1eb589;
+    font-weight: 700;
+    display: flex;
+    font-size: 10px;
+}
+.c2 .sd{
+    display: inline-flex;
+    text-align: end;
+    gap:4px;
+    color: #dc414c;
+    font-weight: 700;
+    display: flex;
+    font-size: 10px;
+} */
+
+[data-theme="light"] {
+    --bg:fff;
+    --ctext:#1f2029;
+    --hoverl:#cad3d4ac;
+    --box: hsl(225, 100%, 98%);
+    --tc:#111;
+}
+
+[data-theme="dark"]{
+    --bg:hsl(230,17%,14%);
+    --ctext:#fff;
+    --hoverl:#3d4256be;
+    --box: #252a41;
+    --tc:#fff;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Add your existing CSS code here */
+
+/* Media query for mobile devices (375px or less) */
+@media only screen and (max-width: 675px) {
+    main {
+        width: 90vw; /* Adjust main width for better mobile display */
+        margin: 5vw 5vw; /* Adjust main margin for better mobile display */
+    }
+
+    #dashboard {
+        flex-direction: column; /* Stack #d1 and #d2 vertically for better mobile display */
+        align-items: center; /* Center align #d1 and #d2 */
+    }
+
+    #d1 h1 {
+        font-size: 1rem; /* Decrease font size for smaller screens */
+    }
+
+    #d1 p {
+        font-size: 12px; /* Decrease font size for smaller screens */
+    }
+
+    .followers {
+        flex-direction: column; /* Stack follower boxes vertically for better mobile display */
+        gap: 15px; /* Add gap between follower boxes */
+    }
+
+    .mbox {
+        width: 100%; /* Make follower boxes full width on mobile */
+        margin-top: 0; /* Remove top margin on mobile */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .mbox .con {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 10px; /* Adjust padding for better mobile display */
+    }
+
+    .mbox span,
+    .num h1,
+    .follow,
+    .mbox .spu,
+    .mbox .spd {
+        font-size: 12px; /* Decrease font size for smaller screens */
+    }
+
+    .overview {
+        font-size: 14px; /* Decrease font size for smaller screens */
+        margin: 10px 0; /* Adjust margin for better mobile display */
+    }
+
+    .cbox {
+        width: 100%; /* Make stat boxes full width on mobile */
+        height: auto; /* Allow height to adjust based on content */
+        margin-bottom: 10px; /* Adjust margin for better mobile display */
+    }
+
+    .c1 {
+        margin: 5px 10px; /* Adjust margin for better mobile display */
+        font-size: 12px; /* Decrease font size for smaller screens */
+    }
+
+    .c2 {
+        margin: 5px 8px; /* Adjust margin for better mobile display */
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+}
